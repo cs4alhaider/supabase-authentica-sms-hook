@@ -63,7 +63,8 @@ The Edge Function is already implemented [here](./index.ts). See/copy the source
 
 The function supports automatic routing between SMS and WhatsApp based on phone number country codes. This is useful because WhatsApp is significantly cheaper (~20x) for international numbers.
 
-> **Important:** To enable WhatsApp delivery, you must set `AUTHENTICA_WHATSAPP_TEMPLATE_ID` with a valid WhatsApp template from your Authentica.sa dashboard. SMS and WhatsApp require different templates.
+> [!IMPORTANT]
+> To enable WhatsApp delivery, you must set `AUTHENTICA_WHATSAPP_TEMPLATE_ID` with a valid WhatsApp template from your Authentica.sa dashboard. SMS and WhatsApp require different templates.
 
 | `SMS_COUNTRY_CODES` Value | Behavior                                              |
 | ------------------------- | ----------------------------------------------------- |
@@ -71,7 +72,8 @@ The function supports automatic routing between SMS and WhatsApp based on phone 
 | `+966`                    | Saudi numbers (+966) use SMS, all others use WhatsApp |
 | `+966,+971,+973`          | Saudi/UAE/Bahrain use SMS, all others use WhatsApp    |
 
-> **Note:** Authentica.sa supports an automatic fallback strategy - if a number doesn't have WhatsApp, it will automatically send via SMS instead. This feature needs to be enabled from your [Authentica.sa dashboard](https://authentica.sa).
+> [!NOTE]
+> Authentica.sa supports an automatic fallback strategy - if a number doesn't have WhatsApp, it will automatically send via SMS instead. This feature needs to be enabled from your [Authentica.sa dashboard](https://authentica.sa).
 
 **Examples:**
 
