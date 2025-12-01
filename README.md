@@ -9,7 +9,7 @@ This guide shows how to implement a custom SMS provider (Authentica.sa) for [Sup
 ## Prerequisites
 
 - [Supabase project](https://supabase.com) (hosted or self-hosted)
-- Authentica.sa account with API credentials
+- [Authentica.sa](https://Authentica.sa) account with API credentials
 - [Supabase CLI](https://supabase.com/docs/guides/local-development/cli/getting-started) (for local development)
 - [Deno](https://deno.com) runtime (for Edge Functions)
 
@@ -97,7 +97,7 @@ Create `supabase/functions/.env`:
 AUTHENTICA_API_KEY="$2y$10$XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 AUTHENTICA_SMS_TEMPLATE_ID="9"
 # WhatsApp template ID (required to enable WhatsApp delivery)
-AUTHENTICA_WHATSAPP_TEMPLATE_ID=""
+AUTHENTICA_WHATSAPP_TEMPLATE_ID="2"
 FALLBACK_EMAIL="noreply@yourdomain.com"
 
 # Webhook secret from Supabase Dashboard
